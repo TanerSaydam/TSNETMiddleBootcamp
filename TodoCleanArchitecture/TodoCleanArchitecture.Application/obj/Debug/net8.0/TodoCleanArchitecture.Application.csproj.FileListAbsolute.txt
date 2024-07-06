@@ -1,0 +1,15 @@
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\bin\Debug\net8.0\TodoCleanArchitecture.Application.deps.json
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\bin\Debug\net8.0\TodoCleanArchitecture.Application.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\bin\Debug\net8.0\TodoCleanArchitecture.Application.pdb
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\bin\Debug\net8.0\TodoCleanArchitecture.Domain.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\bin\Debug\net8.0\TodoCleanArchitecture.Domain.pdb
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.csproj.AssemblyReference.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.AssemblyInfoInputs.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.AssemblyInfo.cs
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.csproj.CoreCompileInputs.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoClea.1B1F9ED4.Up2Date
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\refint\TodoCleanArchitecture.Application.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\TodoCleanArchitecture.Application.pdb
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Application\obj\Debug\net8.0\ref\TodoCleanArchitecture.Application.dll

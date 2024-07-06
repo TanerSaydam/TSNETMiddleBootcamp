@@ -1,0 +1,17 @@
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Infrastructure.deps.json
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Infrastructure.runtimeconfig.json
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Infrastructure.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Infrastructure.pdb
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Domain.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Domain.pdb
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.csproj.AssemblyReference.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.AssemblyInfoInputs.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.AssemblyInfo.cs
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.csproj.CoreCompileInputs.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoClea.B4DAF7B8.Up2Date
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\refint\TodoCleanArchitecture.Infrastructure.dll
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.pdb
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.genruntimeconfig.cache
+C:\TSNETMiddle\CleanArchitecture\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\ref\TodoCleanArchitecture.Infrastructure.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c8FB6zbFI+A4IxtL1y+lwS3cfMPj8B4+1EsMcRHujds=",
+  "Source": "TodoCleanArchitecture.WebAPI",
+  "BasePath": "_content/TodoCleanArchitecture.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
