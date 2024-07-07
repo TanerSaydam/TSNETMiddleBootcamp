@@ -42,7 +42,7 @@ internal sealed class TodoRepository(
 
     public async Task UpdateAsync(Todo todo, CancellationToken cancellationToken = default)
     {
-        context.Update(todo);
+        //context.Update(todo);
         await context.SaveChangesAsync(cancellationToken);
     }
 }

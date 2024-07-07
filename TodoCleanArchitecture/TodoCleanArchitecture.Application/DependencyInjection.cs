@@ -11,6 +11,7 @@ public static class DependencyInjection
             //configuration.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
             configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
         });
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
         return services;
     }
 }
