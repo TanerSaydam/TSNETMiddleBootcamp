@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using System.Text.Json;
-using TS.Result;
 
 namespace TodoCleanArchitecture.WebAPI.Middlewares;
 
@@ -24,7 +23,7 @@ public sealed class MyExceptionHandler : IExceptionHandler
         httpContext.Response.ContentType = "application/json";
 
         string errorMessage = exception.Message;
-        Result<string> error = Result<string>.Failure(errorMessage);
+        var error = new { errorMessage };
         string errorString = JsonSerializer.Serialize(error);
         await httpContext.Response.WriteAsync(errorString);
 

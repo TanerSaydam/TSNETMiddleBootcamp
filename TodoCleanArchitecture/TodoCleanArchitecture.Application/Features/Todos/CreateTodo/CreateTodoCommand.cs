@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using TS.Result;
+using TodoCleanArchitecture.Domain.Abstractions;
 
 namespace TodoCleanArchitecture.Application.Features.Todos.CreateTodo;
 public sealed record CreateTodoCommand(

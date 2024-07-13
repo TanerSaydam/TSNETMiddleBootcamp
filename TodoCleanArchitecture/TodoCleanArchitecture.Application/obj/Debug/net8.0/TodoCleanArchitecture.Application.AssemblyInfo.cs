@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TodoCleanArchitecture.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+131b3abab823d730eaf9f931c3359b0dc2b6d422")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5214cb037d2f1b21312cd818fa892324dd47501a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TodoCleanArchitecture.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TodoCleanArchitecture.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

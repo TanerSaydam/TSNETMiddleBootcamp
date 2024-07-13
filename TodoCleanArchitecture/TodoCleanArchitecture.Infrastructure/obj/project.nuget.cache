@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zjVoCAPB4vkH9PB29iYnLhXUe+RtjEHAE8nTlMMD+REk0vlmm9mBSjzn7ui8RYCgL+WmTLvHZtUyCNf/s69eNg==",
+  "dgSpecHash": "pdCZsBv+3mRnVfuDCH5RmbMy2o0xZ+yMXqiHYwvZxF8UPf3lFa25H/eBxYpBwV0SZKSTNzzaj+6HfMuMX85U5g==",
   "success": true,
   "projectFilePath": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\bogus\\35.5.1\\bogus.35.5.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

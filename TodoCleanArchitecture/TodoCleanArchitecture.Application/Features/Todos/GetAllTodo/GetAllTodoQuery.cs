@@ -2,4 +2,4 @@
 using TodoCleanArchitecture.Domain.Entities;
 
 namespace TodoCleanArchitecture.Application.Features.Todos.GetAllTodo;
-public sealed record GetAllTodoQuery : IRequest<List<Todo>>;
+public sealed record GetAllTodoQuery : IRequest<IQueryable<Todo>>;

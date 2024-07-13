@@ -61,10 +61,6 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.3.0, )"
-            },
-            "TS.Result": {
-              "target": "Package",
-              "version": "[8.0.6, )"
             }
           },
           "imports": [
@@ -231,6 +227,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.5.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -329,6 +329,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.2.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

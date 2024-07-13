@@ -157,3 +157,9 @@ C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\obj\Debug\net8
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\obj\Debug\net8.0\ref\TodoCleanArchitecture.WebAPI.dll
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\TS.Result.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Bogus.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OData.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.OData.Core.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.OData.Edm.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Spatial.dll
