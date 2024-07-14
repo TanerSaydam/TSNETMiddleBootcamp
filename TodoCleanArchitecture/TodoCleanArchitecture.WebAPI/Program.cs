@@ -1,13 +1,22 @@
 using Microsoft.AspNetCore.OData;
+using Microsoft.Extensions.Options;
 using TodoCleanArchitecture.Application;
 using TodoCleanArchitecture.Infrastructure;
+using TodoCleanArchitecture.Infrastructure.Options;
 using TodoCleanArchitecture.WebAPI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<ConnectionStringOptions>(builder.Configuration.GetSection("ConnectionStrings"));
+
 builder.Services.AddCors();
 builder.Services.AddApplication();
-builder.Services.AddInfrastructure();
+var conOptions =
+    builder.Services
+    .BuildServiceProvider()
+    .GetRequiredService<IOptionsMonitor<ConnectionStringOptions>>();
+
+builder.Services.AddInfrastructure(conOptions, builder.Configuration);
 builder.Services.AddControllers().AddOData(action =>
 {
     action.EnableQueryFeatures();

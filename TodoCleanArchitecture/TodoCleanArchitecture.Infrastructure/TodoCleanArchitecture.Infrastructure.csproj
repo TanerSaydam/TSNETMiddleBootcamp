@@ -13,9 +13,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TodoCleanArchitecture.Application\TodoCleanArchitecture.Application.csproj" />
     <ProjectReference Include="..\TodoCleanArchitecture.Domain\TodoCleanArchitecture.Domain.csproj" />
   </ItemGroup>
 

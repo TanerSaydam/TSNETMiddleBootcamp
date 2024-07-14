@@ -1,11 +1,17 @@
 # TS NET Middle Eğitimi
 
-## 14.07.2024 (Sonraki ders)
+## 20.07.2024 (Sonraki ders)
+- UnitOfWork
+- AsNoTracking - Include
+- Outbox Pattern
+- Domain Event
+- Behaviors
+- Value Object
+
+## 14.07.2024
 - Memory Cache - Redis Cache
 - Options Pattern
 - Generic Repository Pattern
-- Domain Event
-- Behaviors
 
 ## 13.07.2024
 - Result pattern

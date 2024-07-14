@@ -163,3 +163,5 @@ C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.OData.Edm.dll
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Spatial.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.WebAPI\bin\Debug\net8.0\StackExchange.Redis.dll

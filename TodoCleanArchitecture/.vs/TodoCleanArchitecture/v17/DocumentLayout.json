@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "C:\\TSNETMiddle\\TodoCleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.webapi\\aop\\enablequerywithmetadataattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|solutionrelative:todocleanarchitecture.webapi\\aop\\enablequerywithmetadataattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.infrastructure\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|solutionrelative:todocleanarchitecture.infrastructure\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.application\\features\\todos\\getalltodo\\getalltodoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|solutionrelative:todocleanarchitecture.application\\features\\todos\\getalltodo\\getalltodoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|solutionrelative:todocleanarchitecture.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.domain\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|solutionrelative:todocleanarchitecture.domain\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.domain\\repositories\\itodorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|solutionrelative:todocleanarchitecture.domain\\repositories\\itodorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.application\\features\\todos\\updatetodo\\updatetodocommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|solutionrelative:todocleanarchitecture.application\\features\\todos\\updatetodo\\updatetodocommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|solutionrelative:todocleanarchitecture.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.application\\features\\todos\\getalltodo\\getalltodoqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FBE1EC6-3954-441C-910F-D426B8681388}|TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj|solutionrelative:todocleanarchitecture.application\\features\\todos\\getalltodo\\getalltodoqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.webapi\\controllers\\todoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|solutionrelative:todocleanarchitecture.webapi\\controllers\\todoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.domain\\abstractions\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|solutionrelative:todocleanarchitecture.domain\\abstractions\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.domain\\entities\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|solutionrelative:todocleanarchitecture.domain\\entities\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|solutionrelative:todocleanarchitecture.webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|solutionrelative:todocleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B310061E-2185-4EA4-8412-28D0B14F79D6}|TodoCleanArchitecture.WebAPI\\TodoCleanArchitecture.WebAPI.csproj|solutionrelative:todocleanarchitecture.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|solutionrelative:todocleanarchitecture.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.infrastructure\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24696A5E-3678-465E-9DF5-8C1DC2355587}|TodoCleanArchitecture.Infrastructure\\TodoCleanArchitecture.Infrastructure.csproj|solutionrelative:todocleanarchitecture.infrastructure\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|c:\\tsnetmiddle\\todocleanarchitecture\\todocleanarchitecture.domain\\abstractions\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CDB9EEF-F1C2-4C46-8112-36F7AF20F72A}|TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj|solutionrelative:todocleanarchitecture.domain\\abstractions\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,19 +44,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Abstractions\\Result.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.Domain\\Abstractions\\Result.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Abstractions\\Result.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.Domain\\Abstractions\\Result.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAArwBgAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T08:57:57.504Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -91,132 +66,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Todo.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Entities\\Todo.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.Domain\\Entities\\Todo.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Entities\\Todo.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.Domain\\Entities\\Todo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "UpdateTodoCommandHandler.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\UpdateTodo\\UpdateTodoCommandHandler.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Application\\Features\\Todos\\UpdateTodo\\UpdateTodoCommandHandler.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\UpdateTodo\\UpdateTodoCommandHandler.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Application\\Features\\Todos\\UpdateTodo\\UpdateTodoCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T08:53:05.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnableQueryWithMetadataAttribute.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\AOP\\EnableQueryWithMetadataAttribute.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.WebAPI\\AOP\\EnableQueryWithMetadataAttribute.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\AOP\\EnableQueryWithMetadataAttribute.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.WebAPI\\AOP\\EnableQueryWithMetadataAttribute.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAoAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T08:48:34.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TodosController.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\Controllers\\TodosController.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.WebAPI\\Controllers\\TodosController.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\Controllers\\TodosController.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.WebAPI\\Controllers\\TodosController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T08:27:26.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TodoRepository.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAewB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T07:56:02.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAllTodoQueryHandler.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T08:29:57.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetAllTodoQuery.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQuery.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQuery.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQuery.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T08:29:51.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.WebAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "TodoCleanArchitecture.WebAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-13T08:32:23.465Z",
+              "WhenOpened": "2024-07-14T08:53:41.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "WebAPI.http",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\WebAPI.http",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.WebAPI\\WebAPI.http",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\WebAPI.http",
-              "RelativeToolTip": "TodoCleanArchitecture.WebAPI\\WebAPI.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-07-13T08:19:22.478Z",
+              "Title": "GetAllTodoQueryHandler.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Application\\Features\\Todos\\GetAllTodo\\GetAllTodoQueryHandler.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABIAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T08:51:11.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoRepository.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Infrastructure\\Repositories\\TodoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T08:49:33.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.WebAPI\\Program.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.WebAPI\\Program.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.WebAPI\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAMwDUAAAAAAAAA",
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Abstractions\\Entity.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Domain\\Abstractions\\Entity.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Abstractions\\Entity.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Domain\\Abstractions\\Entity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T07:54:40.23Z",
+              "WhenOpened": "2024-07-14T08:48:19.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TodoCleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TodoCleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAkwA8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Infrastructure\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Infrastructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Infrastructure\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T07:44:20.523Z",
+              "WhenOpened": "2024-07-14T08:44:33.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITodoRepository.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Repositories\\ITodoRepository.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Domain\\Repositories\\ITodoRepository.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Repositories\\ITodoRepository.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Domain\\Repositories\\ITodoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T08:43:44.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Domain\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Domain\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T08:41:01.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "TodoCleanArchitecture.Application\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "TodoCleanArchitecture.Application\\Mapping\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T08:53:30.114Z",
               "EditorCaption": ""
             }
           ]

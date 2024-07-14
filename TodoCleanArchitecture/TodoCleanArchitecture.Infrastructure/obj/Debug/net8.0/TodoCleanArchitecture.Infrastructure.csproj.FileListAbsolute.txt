@@ -33,3 +33,5 @@ C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\De
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.pdb
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\TodoCleanArchitecture.Infrastructure.genruntimeconfig.cache
 C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\obj\Debug\net8.0\ref\TodoCleanArchitecture.Infrastructure.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Application.dll
+C:\TSNETMiddle\TodoCleanArchitecture\TodoCleanArchitecture.Infrastructure\bin\Debug\net8.0\TodoCleanArchitecture.Application.pdb

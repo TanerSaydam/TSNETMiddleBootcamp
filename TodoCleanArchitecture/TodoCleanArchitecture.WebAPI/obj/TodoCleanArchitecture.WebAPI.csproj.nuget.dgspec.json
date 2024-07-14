@@ -61,6 +61,18 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -206,6 +218,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj": {
+                "projectPath": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Application\\TodoCleanArchitecture.Application.csproj"
+              },
               "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj": {
                 "projectPath": "C:\\TSNETMiddle\\TodoCleanArchitecture\\TodoCleanArchitecture.Domain\\TodoCleanArchitecture.Domain.csproj"
               }
@@ -240,6 +255,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.0, )"
             }
           },
           "imports": [

@@ -1,16 +1,26 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
+using TodoCleanArchitecture.Application.Services;
 using TodoCleanArchitecture.Domain.Entities;
 using TodoCleanArchitecture.Domain.Repositories;
 
 namespace TodoCleanArchitecture.Application.Features.Todos.GetAllTodo;
 
 internal sealed class GetAllTodoQueryHandler(
-    ITodoRepository todoRepository) : IRequestHandler<GetAllTodoQuery, IQueryable<Todo>>
+    ITodoRepository todoRepository,
+    ICacheService cache) : IRequestHandler<GetAllTodoQuery, List<Todo>>
 {
-    public async Task<IQueryable<Todo>> Handle(GetAllTodoQuery request, CancellationToken cancellationToken)
+    public async Task<List<Todo>> Handle(GetAllTodoQuery request, CancellationToken cancellationToken)
     {
-        var response = todoRepository.GetAll();
-        await Task.CompletedTask;
-        return response;
+        cache.TryGetValue("todos", out List<Todo>? todos);
+
+        if (todos is null)
+        {
+            todos = await todoRepository.GetAll().ToListAsync(cancellationToken);
+
+            cache.Set("todos", todos);
+        }
+
+        return todos;
     }
 }

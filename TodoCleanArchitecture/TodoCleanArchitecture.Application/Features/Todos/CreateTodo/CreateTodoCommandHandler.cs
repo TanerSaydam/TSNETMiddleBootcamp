@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using TodoCleanArchitecture.Application.Services;
 using TodoCleanArchitecture.Domain.Abstractions;
 using TodoCleanArchitecture.Domain.Entities;
 using TodoCleanArchitecture.Domain.Repositories;
@@ -8,7 +9,8 @@ namespace TodoCleanArchitecture.Application.Features.Todos.CreateTodo;
 
 internal sealed class CreateTodoCommandHandler(
     ITodoRepository todoRepository,
-    IMapper mapper
+    IMapper mapper,
+    ICacheService cache
     ) : IRequestHandler<CreateTodoCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(CreateTodoCommand request, CancellationToken cancellationToken)
@@ -17,9 +19,6 @@ internal sealed class CreateTodoCommandHandler(
 
         if (isWorkExists)
         {
-            //throw new ArgumentException("This record already exsist");
-            //throw new DublicateRecordWorkException();
-            //var errorResponse = new Result<string>(500, "This record already exsist");
             var errorResponse = Result<string>.Failure(500, "This record already exsist");
             return errorResponse;
         }
@@ -27,7 +26,7 @@ internal sealed class CreateTodoCommandHandler(
         Todo todo = mapper.Map<Todo>(request);
         await todoRepository.CreateAsync(todo, cancellationToken);
 
-        //var response = Result<string>.Success("Create is successful");
+        cache.Remove("todos");
         return "Create is successful";
     }
 }

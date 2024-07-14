@@ -1,11 +1,13 @@
 ﻿using MediatR;
+using TodoCleanArchitecture.Application.Services;
 using TodoCleanArchitecture.Domain.Entities;
 using TodoCleanArchitecture.Domain.Repositories;
 
 namespace TodoCleanArchitecture.Application.Features.Todos.DeleteTodoById;
 
 internal sealed class DeleteTodoByIdCommandHandler(
-    ITodoRepository todoRepository) : IRequestHandler<DeleteTodoByIdCommand>
+    ITodoRepository todoRepository,
+    ICacheService cache) : IRequestHandler<DeleteTodoByIdCommand>
 {
     public async Task Handle(DeleteTodoByIdCommand request, CancellationToken cancellationToken)
     {
@@ -15,5 +17,7 @@ internal sealed class DeleteTodoByIdCommandHandler(
             throw new ArgumentNullException("Todo not found");
         }
         await todoRepository.DeleteAsync(todo, cancellationToken);
+
+        cache.Remove("todos");
     }
 }

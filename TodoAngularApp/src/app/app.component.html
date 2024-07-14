@@ -1,12 +1,10 @@
 <h1>Todo App</h1>
 <button (click)="getAll()">API Request</button>
 <flexi-grid
-  [data]="data()"
-  [total]="total()"
+  [data]="data()"  
   [pageable]="true"
   [sortable]="true"
-  [filterable]="true"
-  [dataBinding]="true"
+  [filterable]="true"  
   (dataStateChange)="onStateChange($event)"  
   [showIndex]="true"
   [showCaption]="true"
