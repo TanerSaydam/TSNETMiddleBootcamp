@@ -1,0 +1,30 @@
+<h1>Todo App</h1>
+<button (click)="getAll()">API Request</button>
+<flexi-grid
+  [data]="data()"  
+  [pageable]="true"
+  [sortable]="true"
+  [filterable]="true"  
+  (dataStateChange)="onStateChange($event)"  
+  [showIndex]="true"
+  [showCaption]="true"
+  captionTitle="Todo List"
+  >
+
+  <flexi-grid-column field="id" title="Id"></flexi-grid-column>
+  <flexi-grid-column field="work" title="Work"></flexi-grid-column>
+  <flexi-grid-column field="deadLine" title="Dead Line" filterType="date" format="dd.MM.yyyy"></flexi-grid-column>
+  <flexi-grid-column field="isCompleted" title="Is Completed" >
+    <ng-template #isCompletedColumnTemplate let-item="item">
+      @if(item.isCompleted){
+        <span class="alert alert-success">Closed</span>
+      }
+
+      @if(!item.isCompleted){
+        <span class="alert alert-danger">Open</span>
+      }
+    </ng-template>
+  </flexi-grid-column>
+  
+
+</flexi-grid>

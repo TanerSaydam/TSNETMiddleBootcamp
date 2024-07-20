@@ -1,0 +1,4 @@
+GET http://localhost:5256/api/Todos/GetAll?$top=3&skip=5&$orderby=Work&$filter=contains(Work, 'ab') 
+Accept: application/json
+
+###
