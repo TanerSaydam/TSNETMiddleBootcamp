@@ -11,8 +11,8 @@ public sealed class ProductsController(
     [HttpPost]
     public async Task<IActionResult> Create(CreateProductCommand request, CancellationToken cancellationToken)
     {
-        await mediator.Send(request, cancellationToken);
-        return Created();
+        var response = await mediator.Send(request, cancellationToken);
+        return StatusCode(response.StatusCode, response);
     }
 
     [HttpGet]
@@ -20,6 +20,6 @@ public sealed class ProductsController(
     {
         GetAllProductsQuery request = new();
         var response = await mediator.Send(request, cancellationToken);
-        return Ok(response);
+        return StatusCode(response.StatusCode, response);
     }
 }

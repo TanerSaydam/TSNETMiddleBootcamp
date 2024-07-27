@@ -1,4 +1,5 @@
 ﻿using DomainDrivenDesign.Domain.Products;
+using DomainDrivenDesign.Domain.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -27,5 +28,10 @@ internal sealed class ProductConfiguration : IEntityTypeConfiguration<Product>
         {
             builder.Property(b => b.Value).HasColumnType("int").HasColumnName("Stock");
         });
+
+        build.Property(p => p.IsDelete)
+            .HasConversion(isDelete => isDelete.Value, value => new IsDelete(value));
+
+        build.HasQueryFilter(x => !x.IsDelete.Value);
     }
 }

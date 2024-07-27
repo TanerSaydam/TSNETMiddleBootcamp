@@ -1,13 +1,14 @@
-﻿using DomainDrivenDesign.Domain.Products;
+﻿using DomainDrivenDesign.Domain.Abstractions;
+using DomainDrivenDesign.Domain.Products;
 using MediatR;
 
 namespace DomainDrivenDesign.Application.Products;
-public sealed record GetAllProductsQuery() : IRequest<List<GetAllProductsQueryResponse>>;
+public sealed record GetAllProductsQuery() : IRequest<Result<List<GetAllProductsQueryResponse>>>;
 
 internal sealed class GetAllProductsQueryHandler(
-    IProductRepository productRepository) : IRequestHandler<GetAllProductsQuery, List<GetAllProductsQueryResponse>>
+    IProductRepository productRepository) : IRequestHandler<GetAllProductsQuery, Result<List<GetAllProductsQueryResponse>>>
 {
-    public async Task<List<GetAllProductsQueryResponse>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
+    public async Task<Result<List<GetAllProductsQueryResponse>>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
     {
         var result = await productRepository.GetAllAsync(cancellationToken);
 

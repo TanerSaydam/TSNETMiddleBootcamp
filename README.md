@@ -1,15 +1,21 @@
 # TS NET Middle Eğitimi
 
-## 27.07.2024 (Sonraki ders)
+## 28.07.2024 (Sonraki ders)
 - DDD için Örnek e-Ticaret projesine devam ediyoruz
-- ErrorHandler
-- Result Pattern
-- User, Shopping Cart, Order tabloları ve CRUD işlemlerini yazacağız
-- Factory Pattern
+- User Register ve Login metotları yazılacak
+- Authentication (JWT ile)
+- Shopping Cart, Order tabloları ve CRUD işlemlerini yazacağız
 - GitHub Ortak Proje geliştirme - Azure DevOps
 - Docker
 - Unit Test
 - Bitime Projesi
+
+## 27.07.2024
+- DDD için Örnek e-Ticaret projesine devam ediyoruz
+- ErrorHandler
+- Result Pattern
+- User
+- Factory Pattern
 
 ## 21.07.2024
 - Behaviors

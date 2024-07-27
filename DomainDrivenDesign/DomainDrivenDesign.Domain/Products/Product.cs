@@ -1,4 +1,6 @@
-﻿namespace DomainDrivenDesign.Domain.Products;
+﻿using DomainDrivenDesign.Domain.Shared;
+
+namespace DomainDrivenDesign.Domain.Products;
 public sealed class Product
 {
     private Product()
@@ -19,6 +21,7 @@ public sealed class Product
     public Description Description { get; private set; } = default!;
     public Price Price { get; private set; } = default!;
     public Stock Stock { get; private set; } = default!;
+    public IsDelete IsDelete { get; private set; } = default!;
 
     public void SetName(Name name)
     {
@@ -38,5 +41,10 @@ public sealed class Product
     public void SetStock(Stock stock)
     {
         Stock = stock;
+    }
+
+    public void SetDelete(IsDelete isDelete)
+    {
+        IsDelete = isDelete;
     }
 }
