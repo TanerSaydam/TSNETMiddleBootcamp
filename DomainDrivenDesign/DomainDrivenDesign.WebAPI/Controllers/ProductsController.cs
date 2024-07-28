@@ -1,10 +1,12 @@
 ﻿using DomainDrivenDesign.Application.Products;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DomainDrivenDesign.WebAPI.Controllers;
 [Route("api/[controller]")]
 [ApiController]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public sealed class ProductsController(
     IMediator mediator) : ControllerBase
 {

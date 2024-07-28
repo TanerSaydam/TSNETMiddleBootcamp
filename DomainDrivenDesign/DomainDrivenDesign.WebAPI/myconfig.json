@@ -1,0 +1,7 @@
+{
+  "JWT": {
+    "Issuer": "Taner Saydam",
+    "Audience": "Mahmut Demirkiran,Mehmet Oztemel",
+    "SecretKey": "a8285c61-5cc8-4521-94e0-23b05ccafde7,a96d2f32-25a1-4ec0-8ccf-b911f6f73687 7b004d0e-f509-45b2-968d-3b658ebba06b 46d131ac-880d-48b3-b2c3-1c570ff686cf 680926c3-c216-4bed-8488-8c6f5bb7730a"
+  }
+} 

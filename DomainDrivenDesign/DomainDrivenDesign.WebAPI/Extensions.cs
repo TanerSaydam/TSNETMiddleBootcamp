@@ -26,7 +26,15 @@ public static class Extensions
             user.SetIsAdmin(isAdmin);
 
             var userManager = srv.GetRequiredService<UserManager<User>>();
-            await userManager.CreateAsync(user, "Password12*");
+            IdentityResult identityResult = await userManager.CreateAsync(user, "1");
+            if (!identityResult.Succeeded)
+            {
+                foreach (var item in identityResult.Errors)
+                {
+                    Console.WriteLine(item.Description);
+                }
+
+            }
         }
     }
 

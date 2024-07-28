@@ -32,6 +32,6 @@ internal sealed class ProductConfiguration : IEntityTypeConfiguration<Product>
         build.Property(p => p.IsDelete)
             .HasConversion(isDelete => isDelete.Value, value => new IsDelete(value));
 
-        build.HasQueryFilter(x => !x.IsDelete.Value);
+        build.HasQueryFilter(x => x.IsDelete == new IsDelete(false));
     }
 }
