@@ -8,4 +8,9 @@ public sealed record Identity //Value object
         //kontroller
         Value = value;
     }
+
+    public static Identity Create()
+    {
+        return new Identity(Guid.NewGuid());
+    }
 }

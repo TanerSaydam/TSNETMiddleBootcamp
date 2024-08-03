@@ -1,5 +1,6 @@
 ﻿using DomainDrivenDesign.Application.Services;
 using DomainDrivenDesign.Domain.Abstractions;
+using DomainDrivenDesign.Domain.Outboxes;
 using DomainDrivenDesign.Domain.Products;
 using DomainDrivenDesign.Domain.Users;
 using DomainDrivenDesign.Infrastructure.Context;
@@ -38,15 +39,24 @@ public static class DependencyInjection
             options.SignIn.RequireConfirmedEmail = true;
             options.SignIn.RequireConfirmedPhoneNumber = false;
 
+            options.User.RequireUniqueEmail = true;
+
             options.Lockout.MaxFailedAccessAttempts = 3;
-            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
+
+            string stringLockout = configuration.GetSection("SignInOptions:LockOut").Value!;
+            int lockout = Convert.ToInt32(stringLockout);
+
+            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(lockout);
 
         })
             .AddEntityFrameworkStores<ApplicationDbContext>();
 
         services.TryAddScoped<IProductRepository, ProductRepository>();
-        services.TryAddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
+        services.TryAddScoped<IOutboxRepository, OutboxRepository>();
+
         services.TryAddTransient<IJWtProvider, JwtProvider>();
+
+        services.TryAddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
         return services;
     }
 }

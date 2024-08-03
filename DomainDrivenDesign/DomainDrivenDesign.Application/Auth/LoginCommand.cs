@@ -1,8 +1,6 @@
 ﻿using DomainDrivenDesign.Application.Services;
 using DomainDrivenDesign.Domain.Abstractions;
 using DomainDrivenDesign.Domain.Users;
-using FluentEmail.Core;
-using FluentEmail.Core.Models;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -12,10 +10,10 @@ public sealed record LoginCommand(
     string EmailOrUserName,
     string Password) : IRequest<Result<string>>;
 
+
 internal sealed class LoginCommandHandler(
     SignInManager<User> signInManager,
-    IJWtProvider jWtProvider,
-    IFluentEmail fluentEmail
+    IJWtProvider jWtProvider
     ) : IRequestHandler<LoginCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(LoginCommand request, CancellationToken cancellationToken)
@@ -51,19 +49,6 @@ internal sealed class LoginCommandHandler(
         }
 
         string token = jWtProvider.CreateToken(user);
-
-
-        SendResponse sendResponse = await fluentEmail.To(user.Email).Subject("Kullanıcı girişi").Body(@"
-<h1>Kullanıcı giriş yaptı</h1>
-<br>
-<b>Selam bu bir test mailidir. Kullanıcı girişinden hemen sonra gönderilmiştir. İstersen aşağıdaki butona tıkla</b>
-<button>Beni tıkla</button>"
-).SendAsync(cancellationToken);
-
-        if (sendResponse.Successful)
-        {
-
-        }
 
         return token;
     }

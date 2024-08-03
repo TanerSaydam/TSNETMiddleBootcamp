@@ -18,6 +18,7 @@ public sealed class User : IdentityUser<Guid>
         Email = email.Value;
         FirstName = firstName;
         LastName = lastName;
+        IsAdmin = new IsAdmin(false);
     }
     public FirstName FirstName { get; private set; } = default!;
     public LastName LastName { get; private set; } = default!;

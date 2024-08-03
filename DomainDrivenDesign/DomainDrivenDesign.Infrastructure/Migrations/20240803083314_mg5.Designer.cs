@@ -4,6 +4,7 @@ using DomainDrivenDesign.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DomainDrivenDesign.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240803083314_mg5")]
+    partial class mg5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,6 +40,9 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
                     b.Property<string>("Subject")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TryCount")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -181,29 +187,9 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
                                 .HasForeignKey("OutBoxId");
                         });
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.TryCount", "TryCount", b1 =>
-                        {
-                            b1.Property<Guid>("OutBoxId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<int>("Value")
-                                .HasColumnType("int")
-                                .HasColumnName("TryCount");
-
-                            b1.HasKey("OutBoxId");
-
-                            b1.ToTable("OutBoxes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("OutBoxId");
-                        });
-
                     b.Navigation("SendDate");
 
                     b.Navigation("To")
-                        .IsRequired();
-
-                    b.Navigation("TryCount")
                         .IsRequired();
                 });
 

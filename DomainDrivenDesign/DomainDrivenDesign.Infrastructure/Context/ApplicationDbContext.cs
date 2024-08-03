@@ -1,4 +1,5 @@
 ﻿using DomainDrivenDesign.Domain.Abstractions;
+using DomainDrivenDesign.Domain.Outboxes;
 using DomainDrivenDesign.Domain.Products;
 using DomainDrivenDesign.Domain.Users;
 using Microsoft.AspNetCore.Identity;
@@ -13,6 +14,7 @@ internal sealed class ApplicationDbContext : IdentityDbContext<User, IdentityRol
     }
 
     public DbSet<Product> Products { get; set; }
+    public DbSet<OutBox> OutBoxes { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -1,16 +1,19 @@
 # TS NET Middle Eğitimi
 
-## 03.08.2024 (Sonraki ders)
-- DDD için Örnek e-Ticaret projesine devam ediyoruz
-- Ödev: SMTP4Dev ayarlarını Options pattern ile Configden alıp DI de düzeltin
-- User register işlemi
-- Register da Outbox pattern ile onay maili gönderilecek
-- Mail onaylama metodu yazılacak
+## 04.08.2024 (Sonraki ders)
 - Shopping Cart, Order tabloları ve CRUD işlemlerini yazacağız
 - GitHub Ortak Proje geliştirme - Azure DevOps
 - Docker
 - Unit Test
 - Bitime Projesi
+
+## 03.08.2024
+- DDD için Örnek e-Ticaret projesine devam ediyoruz
+- Ödev: SMTP4Dev ayarlarını Options pattern ile Configden alıp DI de düzeltin -- ödev yapıldı
+- User register işlemi
+- Register da Outbox pattern ile onay maili gönderilecek
+- Mail onaylama metodu yazılacak
+- Mail onayı için tekrar mail gönder
 
 ## 28.07.2024
 - DDD için Örnek e-Ticaret projesine devam ediyoruz

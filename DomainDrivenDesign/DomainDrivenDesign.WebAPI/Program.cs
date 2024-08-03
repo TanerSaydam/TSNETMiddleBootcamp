@@ -1,5 +1,6 @@
 using DomainDrivenDesign.Application;
 using DomainDrivenDesign.Infrastructure;
+using DomainDrivenDesign.Infrastructure.Backgrounds;
 using DomainDrivenDesign.Infrastructure.Options;
 using DomainDrivenDesign.WebAPI;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -7,10 +8,13 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using StmpOptions = DomainDrivenDesign.Domain.Options.StmpOptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddJsonFile("myconfig.json", optional: true, reloadOnChange: true);
+
+builder.Services.Configure<StmpOptions>(builder.Configuration.GetSection("SMTP"));
 
 builder.Services
     .AddApplication()
@@ -68,6 +72,12 @@ builder.Services.AddAuthentication().AddJwtBearer(options =>
     };
 });
 
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.CreateServiceTool();
+
+builder.Services.AddHostedService<OutboxBackground>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -90,5 +100,10 @@ app.UseResponseCompression();
 
 Extensions.DatabaseMigrate(app);
 Extensions.CreateFirstAdminUser(app).Wait();
+
+app.MapGet("/test", (IOptionsSnapshot<StmpOptions> options) =>
+{
+    return Results.Ok(options.Value);
+});
 
 app.Run();
