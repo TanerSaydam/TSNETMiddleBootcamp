@@ -1,10 +1,12 @@
 ﻿using DomainDrivenDesign.Application.Auth;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DomainDrivenDesign.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
+[AllowAnonymous]
 public sealed class AuthController(
     IMediator mediator) : ControllerBase
 {

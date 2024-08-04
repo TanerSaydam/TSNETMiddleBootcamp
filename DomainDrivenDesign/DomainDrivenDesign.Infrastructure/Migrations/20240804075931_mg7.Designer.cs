@@ -4,6 +4,7 @@ using DomainDrivenDesign.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DomainDrivenDesign.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240804075931_mg7")]
+    partial class mg7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,7 +43,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OutBoxes", (string)null);
+                    b.ToTable("OutBoxes");
                 });
 
             modelBuilder.Entity("DomainDrivenDesign.Domain.Products.Product", b =>
@@ -57,7 +60,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("DomainDrivenDesign.Domain.ShoppingCarts.ShoppingCart", b =>
@@ -136,7 +139,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", b =>
@@ -156,12 +159,12 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles", (string)null);
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("DomainDrivenDesign.Domain.Outboxes.OutBox", b =>
                 {
-                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.OutBox.SendDate#DomainDrivenDesign.Domain.Outboxes.SendDate", "SendDate", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.SendDate", "SendDate", b1 =>
                         {
                             b1.Property<Guid>("OutBoxId")
                                 .HasColumnType("uniqueidentifier");
@@ -172,13 +175,13 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("OutBoxId");
 
-                            b1.ToTable("OutBoxes", (string)null);
+                            b1.ToTable("OutBoxes");
 
                             b1.WithOwner()
                                 .HasForeignKey("OutBoxId");
                         });
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.OutBox.To#DomainDrivenDesign.Domain.Outboxes.To", "To", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.To", "To", b1 =>
                         {
                             b1.Property<Guid>("OutBoxId")
                                 .HasColumnType("uniqueidentifier");
@@ -190,13 +193,13 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("OutBoxId");
 
-                            b1.ToTable("OutBoxes", (string)null);
+                            b1.ToTable("OutBoxes");
 
                             b1.WithOwner()
                                 .HasForeignKey("OutBoxId");
                         });
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.OutBox.TryCount#DomainDrivenDesign.Domain.Outboxes.TryCount", "TryCount", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.Outboxes.TryCount", "TryCount", b1 =>
                         {
                             b1.Property<Guid>("OutBoxId")
                                 .HasColumnType("uniqueidentifier");
@@ -207,7 +210,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("OutBoxId");
 
-                            b1.ToTable("OutBoxes", (string)null);
+                            b1.ToTable("OutBoxes");
 
                             b1.WithOwner()
                                 .HasForeignKey("OutBoxId");
@@ -224,7 +227,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
             modelBuilder.Entity("DomainDrivenDesign.Domain.Products.Product", b =>
                 {
-                    b.OwnsOne("DomainDrivenDesign.Domain.Products.Product.Name#DomainDrivenDesign.Domain.Products.Name", "Name", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.Products.Name", "Name", b1 =>
                         {
                             b1.Property<Guid>("ProductId")
                                 .HasColumnType("uniqueidentifier");
@@ -236,13 +239,13 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("ProductId");
 
-                            b1.ToTable("Products", (string)null);
+                            b1.ToTable("Products");
 
                             b1.WithOwner()
                                 .HasForeignKey("ProductId");
                         });
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.Products.Product.Price#DomainDrivenDesign.Domain.Products.Price", "Price", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.Products.Price", "Price", b1 =>
                         {
                             b1.Property<Guid>("ProductId")
                                 .HasColumnType("uniqueidentifier");
@@ -253,13 +256,13 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("ProductId");
 
-                            b1.ToTable("Products", (string)null);
+                            b1.ToTable("Products");
 
                             b1.WithOwner()
                                 .HasForeignKey("ProductId");
                         });
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.Products.Product.Stock#DomainDrivenDesign.Domain.Products.Stock", "Stock", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.Products.Stock", "Stock", b1 =>
                         {
                             b1.Property<Guid>("ProductId")
                                 .HasColumnType("uniqueidentifier");
@@ -270,7 +273,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("ProductId");
 
-                            b1.ToTable("Products", (string)null);
+                            b1.ToTable("Products");
 
                             b1.WithOwner()
                                 .HasForeignKey("ProductId");
@@ -294,7 +297,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.ShoppingCarts.ShoppingCart.CreatedAt#DomainDrivenDesign.Domain.ShoppingCarts.CreatedAt", "CreatedAt", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.ShoppingCarts.CreatedAt", "CreatedAt", b1 =>
                         {
                             b1.Property<Guid>("ShoppingCartId")
                                 .HasColumnType("uniqueidentifier");
@@ -305,13 +308,13 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("ShoppingCartId");
 
-                            b1.ToTable("ShoppingCarts", (string)null);
+                            b1.ToTable("ShoppingCarts");
 
                             b1.WithOwner()
                                 .HasForeignKey("ShoppingCartId");
                         });
 
-                    b.OwnsOne("DomainDrivenDesign.Domain.ShoppingCarts.ShoppingCart.Quantity#DomainDrivenDesign.Domain.ShoppingCarts.Quantity", "Quantity", b1 =>
+                    b.OwnsOne("DomainDrivenDesign.Domain.ShoppingCarts.Quantity", "Quantity", b1 =>
                         {
                             b1.Property<Guid>("ShoppingCartId")
                                 .HasColumnType("uniqueidentifier");
@@ -322,7 +325,7 @@ namespace DomainDrivenDesign.Infrastructure.Migrations
 
                             b1.HasKey("ShoppingCartId");
 
-                            b1.ToTable("ShoppingCarts", (string)null);
+                            b1.ToTable("ShoppingCarts");
 
                             b1.WithOwner()
                                 .HasForeignKey("ShoppingCartId");

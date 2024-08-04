@@ -1,7 +1,6 @@
-﻿using DomainDrivenDesign.Application.Services;
-using DomainDrivenDesign.Domain.Abstractions;
-using DomainDrivenDesign.Domain.Outboxes;
+﻿using DomainDrivenDesign.Domain.Abstractions;
 using DomainDrivenDesign.Domain.Users;
+using DomainDrivenDesign.Domain.Users.Events;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
@@ -15,7 +14,7 @@ public sealed record RegisterCommand(
 
 internal sealed class RegisterCommandHandler(
     UserManager<User> userManager,
-    IOutboxRepository outboxRepository
+    IMediator mediator
     ) : IRequestHandler<RegisterCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(RegisterCommand request, CancellationToken cancellationToken)
@@ -35,12 +34,8 @@ internal sealed class RegisterCommandHandler(
             return Result<string>.Failure(errorMessage);
         }
 
-        Subject subject = new("Register");
-        Body body = new(EmailTemplateService.CreateRegisterBody(user.Email!));
-        To to = new(user.Email!);
-        OutBox outBox = new(to, subject, body);
+        await mediator.Publish(new RegisterDomainEvent(request.Email));
 
-        await outboxRepository.CreateAsync(outBox, cancellationToken);
 
         return "User create is successful";
     }

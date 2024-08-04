@@ -1,6 +1,6 @@
-﻿using DomainDrivenDesign.Application.Services;
-using DomainDrivenDesign.Domain.Abstractions;
+﻿using DomainDrivenDesign.Domain.Abstractions;
 using DomainDrivenDesign.Domain.Outboxes;
+using DomainDrivenDesign.Domain.Services;
 using DomainDrivenDesign.Domain.Users;
 using MediatR;
 using Microsoft.AspNetCore.Identity;

@@ -1,4 +1,5 @@
 ﻿using DomainDrivenDesign.Domain.Shared;
+using DomainDrivenDesign.Domain.ShoppingCarts;
 
 namespace DomainDrivenDesign.Domain.Products;
 public sealed class Product
@@ -14,6 +15,7 @@ public sealed class Product
         Description = description;
         Price = price;
         Stock = stock;
+        IsDelete = new(false);
     }
 
     public Identity Id { get; private set; } = default!;
@@ -22,7 +24,7 @@ public sealed class Product
     public Price Price { get; private set; } = default!;
     public Stock Stock { get; private set; } = default!;
     public IsDelete IsDelete { get; private set; } = default!;
-
+    public List<ShoppingCart>? ShoppingCarts { get; private set; }
     public void SetName(Name name)
     {
         Name = name;

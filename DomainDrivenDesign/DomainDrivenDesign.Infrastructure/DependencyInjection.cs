@@ -2,6 +2,7 @@
 using DomainDrivenDesign.Domain.Abstractions;
 using DomainDrivenDesign.Domain.Outboxes;
 using DomainDrivenDesign.Domain.Products;
+using DomainDrivenDesign.Domain.ShoppingCarts;
 using DomainDrivenDesign.Domain.Users;
 using DomainDrivenDesign.Infrastructure.Context;
 using DomainDrivenDesign.Infrastructure.Options;
@@ -53,6 +54,7 @@ public static class DependencyInjection
 
         services.TryAddScoped<IProductRepository, ProductRepository>();
         services.TryAddScoped<IOutboxRepository, OutboxRepository>();
+        services.TryAddScoped<IShoppingCartRepository, ShoppingCartRepository>();
 
         services.TryAddTransient<IJWtProvider, JwtProvider>();
 

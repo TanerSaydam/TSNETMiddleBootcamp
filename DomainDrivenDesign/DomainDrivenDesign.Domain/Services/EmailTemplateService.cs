@@ -1,4 +1,4 @@
-﻿namespace DomainDrivenDesign.Application.Services;
+﻿namespace DomainDrivenDesign.Domain.Services;
 public static class EmailTemplateService
 {
     public static string CreateRegisterBody(string email)

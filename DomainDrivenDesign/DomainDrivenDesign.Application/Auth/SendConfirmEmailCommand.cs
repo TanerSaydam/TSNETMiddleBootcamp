@@ -1,7 +1,6 @@
-﻿using DomainDrivenDesign.Application.Services;
-using DomainDrivenDesign.Domain.Abstractions;
-using DomainDrivenDesign.Domain.Outboxes;
+﻿using DomainDrivenDesign.Domain.Abstractions;
 using DomainDrivenDesign.Domain.Users;
+using DomainDrivenDesign.Domain.Users.Events;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
@@ -10,7 +9,7 @@ public sealed record SendConfirmEmailCommand(string Email) : IRequest<Result<str
 
 internal sealed class SendConfirmEmailCommandHandler(
     UserManager<User> userManager,
-    IOutboxRepository outboxRepository) : IRequestHandler<SendConfirmEmailCommand, Result<string>>
+    IMediator mediator) : IRequestHandler<SendConfirmEmailCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(SendConfirmEmailCommand request, CancellationToken cancellationToken)
     {
@@ -26,12 +25,7 @@ internal sealed class SendConfirmEmailCommandHandler(
             return Result<string>.Failure("User email already confirmed");
         }
 
-        Subject subject = new("Register");
-        Body body = new(EmailTemplateService.CreateRegisterBody(user.Email!));
-        To to = new(user.Email!);
-        OutBox outBox = new(to, subject, body);
-
-        await outboxRepository.CreateAsync(outBox, cancellationToken);
+        await mediator.Publish(new RegisterDomainEvent(request.Email));
 
         return "Confirm email send";
     }

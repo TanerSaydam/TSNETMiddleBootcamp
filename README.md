@@ -1,11 +1,15 @@
 # TS NET Middle Eğitimi
 
-## 04.08.2024 (Sonraki ders)
-- Shopping Cart, Order tabloları ve CRUD işlemlerini yazacağız
+## 10.08.2024 (Sonraki ders)
+- Shopping Cart Get All işlemi
+- Order tabloları ve Create GetAll işlemlerini yazacağız
 - GitHub Ortak Proje geliştirme - Azure DevOps
 - Docker
 - Unit Test
 - Bitime Projesi
+
+## 04.08.2024
+- Shopping Cart ve Create işlemi
 
 ## 03.08.2024
 - DDD için Örnek e-Ticaret projesine devam ediyoruz

@@ -1,4 +1,5 @@
 ﻿using DomainDrivenDesign.Domain.Options;
+using DomainDrivenDesign.Domain.Shared;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Net;
@@ -27,7 +28,7 @@ public static class DependencyInjection
 
         services.AddMediatR(configuration =>
         {
-            configuration.RegisterServicesFromAssemblies(typeof(DependencyInjection).Assembly);
+            configuration.RegisterServicesFromAssemblies(typeof(DependencyInjection).Assembly, typeof(Identity).Assembly);
         });
         return services;
     }
